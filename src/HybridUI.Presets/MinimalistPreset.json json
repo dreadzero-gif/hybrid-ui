@@ -1,0 +1,9 @@
+{
+  "name": "Minimalist",
+  "components": {
+    "PlayerFrame": { "x": 100, "y": 950, "scale": 0.9, "visible": true },
+    "TargetFrame": { "x": 1700, "y": 950, "scale": 0.9, "visible": true },
+    "BuffBar": { "x": 900, "y": 880, "scale": 0.8, "visible": true },
+    "CastBar": { "x": 900, "y": 1020, "scale": 1.0, "visible": true }
+  }
+}
