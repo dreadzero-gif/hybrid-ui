@@ -1,0 +1,9 @@
+{
+  "name": "FF14",
+  "components": {
+    "PlayerFrame": { "x": 60, "y": 900, "scale": 1.2, "visible": true },
+    "TargetFrame": { "x": 1600, "y": 900, "scale": 1.2, "visible": true },
+    "BuffBar": { "x": 60, "y": 840, "scale": 1.0, "visible": true },
+    "CastBar": { "x": 800, "y": 1000, "scale": 1.3, "visible": true }
+  }
+}
