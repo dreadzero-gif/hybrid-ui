@@ -1,0 +1,9 @@
+{
+  "name": "ESO",
+  "components": {
+    "PlayerFrame": { "x": 60, "y": 880, "scale": 1.0, "visible": true },
+    "TargetFrame": { "x": 1600, "y": 880, "scale": 1.0, "visible": true },
+    "BuffBar": { "x": 800, "y": 820, "scale": 1.0, "visible": true },
+    "CastBar": { "x": 800, "y": 960, "scale": 1.2, "visible": true }
+  }
+}
