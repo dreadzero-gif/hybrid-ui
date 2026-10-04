@@ -1,0 +1,11 @@
+{
+  "name": "Hybrid UI",
+  "version": "1.0.0",
+  "namespace": "HybridUI.BlishHUD",
+  "package": "HybridUI",
+  "author": "dreadszero-gif",
+  "description": "A modern MMO-grade interface framework for Blish HUD.",
+  "dependencies": {
+    "bh.blishhud": ">=0.11.0"
+  }
+}
