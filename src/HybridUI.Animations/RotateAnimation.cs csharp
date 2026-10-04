@@ -1,0 +1,24 @@
+using HybridUI.Core.Animations;
+
+namespace HybridUI.Animations
+{
+    public class RotateAnimation : IAnimation
+    {
+        private float _time;
+        private readonly float _duration;
+
+        public float Rotation { get; private set; }
+        public bool IsFinished => _time >= _duration;
+
+        public RotateAnimation(float duration = 1f)
+        {
+            _duration = duration;
+        }
+
+        public void Update(float delta)
+        {
+            _time += delta;
+            Rotation = _time * 360f; // degrees per second
+        }
+    }
+}
