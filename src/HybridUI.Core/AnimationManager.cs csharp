@@ -1,0 +1,32 @@
+using HybridUI.Core.Animations;
+using System.Collections.Generic;
+
+namespace HybridUI.Core
+{
+    public static class AnimationManager
+    {
+        private static readonly List<IAnimation> _activeAnimations = new();
+
+        public static void Initialize()
+        {
+            // Nothing yet — reserved for future animation batching
+        }
+
+        public static void Play(IAnimation animation)
+        {
+            _activeAnimations.Add(animation);
+        }
+
+        public static void Update(float delta)
+        {
+            for (int i = _activeAnimations.Count - 1; i >= 0; i--)
+            {
+                var anim = _activeAnimations[i];
+                anim.Update(delta);
+
+                if (anim.IsFinished)
+                    _activeAnimations.RemoveAt(i);
+            }
+        }
+    }
+}
