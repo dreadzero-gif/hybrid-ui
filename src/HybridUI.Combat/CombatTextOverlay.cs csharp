@@ -1,0 +1,45 @@
+using Microsoft.Xna.Framework;
+
+namespace HybridUI.Combat
+{
+    public class CombatTextOverlay
+    {
+        public struct CombatText
+        {
+            public string Text;
+            public Vector2 Position;
+            public float TimeLeft;
+        }
+
+        private readonly List<CombatText> _texts = new();
+
+        public void AddText(string text, Vector2 position, float duration = 1f)
+        {
+            _texts.Add(new CombatText
+            {
+                Text = text,
+                Position = position,
+                TimeLeft = duration
+            });
+        }
+
+        public void Update(float delta)
+        {
+            for (int i = _texts.Count - 1; i >= 0; i--)
+            {
+                var t = _texts[i];
+                t.TimeLeft -= delta;
+
+                if (t.TimeLeft <= 0)
+                    _texts.RemoveAt(i);
+                else
+                    _texts[i] = t;
+            }
+        }
+
+        public void Render()
+        {
+            // Future: draw floating combat text
+        }
+    }
+}
