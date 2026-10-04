@@ -1,3 +1,6 @@
+using Microsoft.Xna.Framework;
+using HybridUI.Core.Themes;
+
 namespace HybridUI.Components
 {
     public interface IHUDComponent
