@@ -1,0 +1,18 @@
+namespace HybridUI.Combat
+{
+    public abstract class CombatAdapter
+    {
+        public virtual void Initialize() { }
+        public virtual void Update(float delta) { }
+
+        protected void OnPlayerChanged()
+        {
+            // Future: update player combat state
+        }
+
+        protected void OnMapChanged()
+        {
+            // Future: reset combat state on map change
+        }
+    }
+}
