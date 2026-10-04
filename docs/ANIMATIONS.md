@@ -15,3 +15,8 @@ Hybrid UI includes a lightweight animation engine.
 ## Using an Animation
 ```csharp
 AnimationEngine.Add(new PulseAnimation(0.5f));
+
+public class MyAnimation : IAnimation
+{
+    public void Update(float delta) { }
+}
