@@ -1,0 +1,9 @@
+{
+  "name": "Hybrid",
+  "components": {
+    "PlayerFrame": { "x": 80, "y": 920, "scale": 1.1, "visible": true },
+    "TargetFrame": { "x": 1650, "y": 920, "scale": 1.1, "visible": true },
+    "BuffBar": { "x": 850, "y": 860, "scale": 1.0, "visible": true },
+    "CastBar": { "x": 850, "y": 1000, "scale": 1.2, "visible": true }
+  }
+}
